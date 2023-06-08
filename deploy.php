@@ -7,7 +7,7 @@ require_once 'recipe/magento2.php';
 // add production server
 host('m2test.wdtdemo.nl')
     ->setHostname('m2test.wdtdemo.nl')
-    ->setRemoteUser('app')
+    ->setRemoteUser('m2test')
     ->setLabels(['stage' => 'production'])
     ->set('branch', 'master')
     ->set('deploy_path','$HOME/domains/m2test.wdtdemo.nl/application');

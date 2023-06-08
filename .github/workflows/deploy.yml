@@ -24,4 +24,6 @@ jobs:
 
       - name: Run deployer
         uses: deployphp/action@v1
-        run: bin/dep deploy ${{ github.event.inputs.deploy_env }} -vvv
+        with:
+          dep: deploy
+          private-key: ${{ secrets.PRIVATE_KEY }}

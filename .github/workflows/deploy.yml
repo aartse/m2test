@@ -25,12 +25,6 @@ jobs:
         with:
           php-version: '8.1'
 
-      - name: Write SSH keys
-        run: |
-          install -m 600 -D /dev/null ~/.ssh/id_rsa
-          echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-
       - name: Deploy
         uses: deployphp/action@v1
         with:

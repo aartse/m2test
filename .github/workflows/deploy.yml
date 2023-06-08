@@ -31,7 +31,7 @@ jobs:
           echo "${{ secrets.PRIVATE_KEY }}" > ~/.ssh/id_rsa
           echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
-      - name: Run deployer
+      - name: Deploy
         uses: deployphp/action@v1
         with:
           dep: deploy

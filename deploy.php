@@ -12,6 +12,14 @@ host('m2test.wdtdemo.nl')
     ->set('branch', 'master')
     ->set('deploy_path','$HOME/domains/m2test.wdtdemo.nl/application');
 
+// add staging server
+host('m2test-staging.wdtdemo.nl')
+    ->setHostname('m2test-staging.wdtdemo.nl')
+    ->setRemoteUser('m2test-staging')
+    ->setLabels(['stage' => 'staging'])
+    ->set('branch', 'staging')
+    ->set('deploy_path','$HOME/domains/m2test-staging.wdtdemo.nl/application');
+
 // Project name
 set('application', 'M2 test website');
 

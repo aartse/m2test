@@ -2,11 +2,6 @@ name: Deploy
 
 on:
   workflow_dispatch:
-    inputs:
-      deploy_env:
-        description: 'Deploy Environment'
-        required: true
-        default: 'm2test.wdtdemo.nl'
 
 # It is important to specify "concurrency" for the workflow,
 # to prevent concurrency between different deploys.

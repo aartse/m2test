@@ -6,7 +6,7 @@ on:
       deploy_env:
         description: 'Deploy Environment'
         required: true
-        default: 'p2000monitor.brandweerspotters.nl'
+        default: 'm2test.wdtdemo.nl'
 
 jobs:
   deploy-production:
